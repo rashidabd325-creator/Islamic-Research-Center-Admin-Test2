@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Panel</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="admin.js"></script>
+</head>
+<body>
+  <h1>🔧 Admin Panel</h1>
+
+  <section>
+    <h2>📖 দোয়া যুক্ত করুন</h2>
+    <input type="text" id="title" placeholder="শিরোনাম">
+    <textarea id="arabic" placeholder="আরবি দোয়া"></textarea>
+    <textarea id="pronunciation" placeholder="উচ্চারণ"></textarea>
+    <textarea id="meaning" placeholder="বাংলা অর্থ"></textarea>
+    <button onclick="addDua()">✅ যুক্ত করুন</button>
+  </section>
+
+  <section>
+    <h2>🕌 নামাজের সময় যুক্ত করুন</h2>
+    <input type="text" id="date" placeholder="তারিখ">
+    <input type="text" id="fajr" placeholder="ফজর">
+    <input type="text" id="dhuhr" placeholder="যোহর">
+    <input type="text" id="asr" placeholder="আসর">
+    <input type="text" id="maghrib" placeholder="মাগরিব">
+    <input type="text" id="isha" placeholder="এশা">
+    <button onclick="addPrayerTime()">✅ যুক্ত করুন</button>
+  </section>
+</body>
+</html>
